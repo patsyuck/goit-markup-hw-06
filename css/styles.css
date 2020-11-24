@@ -781,32 +781,47 @@ footer address {
     color: #212121;
 }
 
-.modal-name-label, .modal-phone-label, .modal-email-label {
-    position: relative;
+.label-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
 }
+
+/*.modal-form {
+    position: relative;
+}*/
+
+/*.modal-name-label, .modal-phone-label, .modal-email-label {
+    display: block;
+    margin-top: 10px;
+}*/
 
 .modal-name-svg {
     position: absolute;
     width: 12px;
     height: 12px;
-    top: 32px;
-    left: 15px;
+    top: 102px /*32px*/;
+    left: 56px /*15px*/;
 }
 
 .modal-phone-svg {
     position: absolute;
     width: 13px;
     height: 13px;
-    top: 32px;
-    left: 15px;
+    top: 167px /*32px*/;
+    left: 55px /*15px*/;
 }
 
 .modal-email-svg {
     position: absolute;
     width: 15px;
     height: 12px;
-    top: 32px;
-    left: 15px;
+    top: 232px /*32px*/;
+    left: 54px /*15px*/;
 }
 
 .modal-input {
@@ -818,7 +833,15 @@ footer address {
 .modal-input-comment {
     width: 100%;
     padding: 12px 16px;
-    height: 120px;
+    resize: none;
+}
+
+.modal-checkbox-label {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    /*margin-left: auto;
+    margin-right: auto;*/
 }
 
 .checkbox-link {
@@ -827,14 +850,17 @@ footer address {
 }
 
 .button-submit {
-    /*width: 200px;
-    height: 50px;*/
+    width: 200px;
+    height: 50px;
     background-color: #2196F3;
-    /*display: flex;
+    display: flex;
     align-items: center;
-    text-align: center;*/
-    /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;*/
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .text-submit {
@@ -845,7 +871,4 @@ footer address {
     line-height: 30px;
     letter-spacing: 0.06em;
     color: #FFFFFF;
-    /*display: flex;
-    align-items: center;
-    text-align: center;*/
 }
