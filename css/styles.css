@@ -622,6 +622,9 @@ footer address {
     border-radius: 4px;
     padding-left: 15px;
     margin-right: 12px;
+    transition-property: border-color, outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-telegram {
@@ -633,6 +636,16 @@ footer address {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-property: border-color, outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-telegram:hover, .input-telegram:focus,
+.button-telegram:hover, .button-telegram:focus {
+    border-color: #2196F3;
+    outline: #2196F3;
+    cursor: pointer;
 }
 
 .text-telegram {
@@ -825,23 +838,75 @@ footer address {
 }
 
 .modal-input {
-    width: 100%;
     padding-left: 40px;
     height: 40px;
 }
 
 .modal-input-comment {
-    width: 100%;
     padding: 12px 16px;
     resize: none;
 }
 
+.modal-input, .modal-input-comment {
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition-property: border-color, outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:hover, .modal-input:focus,
+.modal-input-comment:hover, .modal-input-comment:focus {
+    border-color: #2196F3;
+    outline: #2196F3;
+    cursor: pointer;
+}
+
+.modal-svg {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:hover ~.modal-svg, .modal-input:focus ~.modal-svg {
+    fill: #2196F3;
+}
+
 .modal-checkbox-label {
-    display: block;
-    text-align: center;
+    /*display: block;
+    text-align: center;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 20px;
-    /*margin-left: auto;
-    margin-right: auto;*/
+}
+
+.checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0px;
+    overflow: hidden;
+    border: 0px;
+    clip: rect(0 0 0 0);
+}
+
+.checkbox-svg {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    fill: #FFFFFF;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    margin-right: 8px;
+}
+
+.checkbox:checked + .checkbox-svg {
+    background-color: #2196F3;
+    border-color: #2196F3;
 }
 
 .checkbox-link {
@@ -861,6 +926,15 @@ footer address {
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
+    transition-property: border-color, outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-submit:hover, .button-submit:focus {
+    border-color: #2196F3;
+    outline: #2196F3;
+    cursor: pointer;
 }
 
 .text-submit {
@@ -871,4 +945,14 @@ footer address {
     line-height: 30px;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+}
+
+.close:hover, .close:focus {
+    border-color: #2196F3;
+    outline: #2196F3;
+    cursor: pointer;
+}
+
+.close:hover .x, .close:focus .x {
+    fill: #2196F3;
 }
