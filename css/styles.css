@@ -649,7 +649,7 @@ footer address {
 }
 
 .text-telegram {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-style: 400;
     font-weight: bold;
     font-size: 16px;
@@ -784,7 +784,7 @@ footer address {
 }
 
 .modal-text {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-style: 400;
     font-weight: bold;
     font-size: 20px;
@@ -795,7 +795,7 @@ footer address {
 }
 
 .label-text {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -938,7 +938,7 @@ footer address {
 }
 
 .text-submit {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-style: 400;
     font-weight: bold;
     font-size: 16px;
