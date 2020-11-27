@@ -804,36 +804,54 @@ footer address {
     color: #757575;
 }
 
+.modal-input-comment::placeholder {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);    
+}
+
 /*.modal-form {
     position: relative;
 }*/
 
-/*.modal-name-label, .modal-phone-label, .modal-email-label {
+.modal-name-label, .modal-phone-label, .modal-email-label,
+.modal-comment-label {
     display: block;
-    margin-top: 10px;
-}*/
+}
+
+.modal-name-label {
+    margin-top: 6px;
+}
+
+.modal-phone-label, .modal-email-label, .modal-comment-label {
+    margin-top: 4px;
+}
 
 .modal-name-svg {
     position: absolute;
     width: 12px;
     height: 12px;
-    top: 102px /*32px*/;
-    left: 56px /*15px*/;
+    top: 107px /*32px*/;
+    left: 55px /*15px*/;
 }
 
 .modal-phone-svg {
     position: absolute;
     width: 13px;
     height: 13px;
-    top: 167px /*32px*/;
-    left: 55px /*15px*/;
+    top: 174px /*32px*/;
+    left: 54px /*15px*/;
 }
 
 .modal-email-svg {
     position: absolute;
     width: 15px;
     height: 12px;
-    top: 232px /*32px*/;
+    top: 243px /*32px*/;
     left: 54px /*15px*/;
 }
 
@@ -875,11 +893,11 @@ footer address {
 }
 
 .modal-checkbox-label {
-    /*display: block;
-    text-align: center;*/
-    display: flex;
+    display: block;
+    text-align: center;
+    /*display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;*/
     margin-top: 20px;
 }
 
